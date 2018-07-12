@@ -1,0 +1,33 @@
+{
+  "name": "dok",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "directories": {
+    "example": "example"
+  },
+  "precommit": [
+    "prettier"
+  ],
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && tsc && webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joway/dok.git"
+  },
+  "author": "Joway Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joway/dok/issues"
+  },
+  "homepage": "https://github.com/joway/dok#readme",
+  "devDependencies": {
+    "tslint-config-airbnb": "^5.9.2",
+    "typescript": "^2.9.2",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
